@@ -1,10 +1,4 @@
-# Import your application as:
-# from app import application
-# Example:
-
-from weather import app
-
-# Import CherryPy
+from wwo import app
 import cherrypy
 
 if __name__ == '__main__':

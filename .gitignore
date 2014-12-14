@@ -55,3 +55,7 @@ target/
 
 #emacs
 *~
+
+#settings
+src/settings.py
+

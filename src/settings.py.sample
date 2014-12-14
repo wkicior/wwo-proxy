@@ -1,0 +1,2 @@
+WWO_KEY = "put your wwo key here"
+WWO_ENDPOINT = "http://api.worldweatheronline.com/free/v2/weather.ashx"

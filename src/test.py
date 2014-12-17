@@ -44,10 +44,8 @@ class TestParser(unittest.TestCase):
 
     def test_parse(self):
         res = self.parser.parse(self.input)
+        self.maxDiff = None
         self.assertEquals(self.output, res)
-        
-        
-
 
 class FlaskrTestCase(unittest.TestCase):
 

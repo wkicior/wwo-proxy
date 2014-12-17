@@ -28,5 +28,11 @@ if __name__ == '__main__':
 
     # Start the server engine (Option 1 *and* 2)
 
+    cherrypy.config.update({
+        'log.screen': True,
+        'log.error_file': 'appserver_error_log',
+        'log.access_file': 'appserver_access_log'
+       })
+
     cherrypy.engine.start()
     cherrypy.engine.block()

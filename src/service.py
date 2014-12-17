@@ -16,4 +16,6 @@ class WwoService:
     def get_forecast(self, latitude, longitude):
         self.wwo_gateway.init(self.endpoint, self.key)
         wwo_resp = self.wwo_gateway.get_forecast(latitude, longitude, self.days)
-        return self.parser.parse(wwo_resp)
+        parsed_dict = self.parser.parse(wwo_resp)
+        print parsed_dict
+        return parsed_dict

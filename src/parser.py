@@ -10,7 +10,7 @@ class Parser:
         result = json.loads(json_wwo_input)
         days = result['data']['weather']
         result =  map(lambda x: self.parse_day(x), days)        
-        return {'forecast' : result}
+        return {'forecast' : result }
 
     """
     Parses one day entry

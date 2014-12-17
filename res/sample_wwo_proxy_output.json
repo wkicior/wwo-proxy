@@ -2,11 +2,51 @@
     "forecast": [
         {
             "day": {
+                "condition_entries": [
+                    {
+                        "hour": 1,
+                        "wind_dir_degree": 17,
+                        "wind_gust_knots": 12,
+                        "wind_speed_knots": 6
+                    },
+                    {
+                        "hour": 4,
+                        "wind_dir_degree": 35,
+                        "wind_gust_knots": 10,
+                        "wind_speed_knots": 5
+                    },
+                    {
+                        "hour": 7,
+                        "wind_dir_degree": 48,
+                        "wind_gust_knots": 7,
+                        "wind_speed_knots": 5
+                    }
+                ],
                 "date": "2014-12-16"
             }
         },
         {
             "day": {
+                "condition_entries": [
+                    {
+                        "hour": 1,
+                        "wind_dir_degree": 31,
+                        "wind_gust_knots": 12,
+                        "wind_speed_knots": 6
+                    },
+                    {
+                        "hour": 4,
+                        "wind_dir_degree": 47,
+                        "wind_gust_knots": 11,
+                        "wind_speed_knots": 5
+                    },
+                    {
+                        "hour": 7,
+                        "wind_dir_degree": 50,
+                        "wind_gust_knots": 6,
+                        "wind_speed_knots": 5
+                    }
+                ],
                 "date": "2014-12-17"
             }
         }

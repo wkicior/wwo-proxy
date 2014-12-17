@@ -2,10 +2,13 @@ import json
 import urllib
 import urllib2
 
+#from settings import WWO_TIMEOUT
+
 class WwoGateway:
     def init(self, endpoint, key):
         self.endpoint = endpoint
         self.key = key
+        #self.timeout = WWO_TIMEOUT
 
     def get_forecast(self, latitude, longitude, days):
         values = {'q' : latitude + "," + longitude,
@@ -14,12 +17,9 @@ class WwoGateway:
                   'num_of_days' : days,}
 
         data = urllib.urlencode(values)
-        print data
         req = urllib2.Request(self.endpoint, data)
         response = urllib2.urlopen(self.endpoint + "?" + data)
         the_page = response.read()
-        #json.load(urllib2.urlopen("url"))
-
         return the_page
      
         

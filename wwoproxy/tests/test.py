@@ -1,13 +1,14 @@
 import os
-import wwo
 import unittest
 import tempfile
 import mox
 import json
 
-from service import WwoService
-from gateway import WwoGateway
-from parser import Parser
+from wwoproxy.settings import *
+
+from wwoproxy.service.service import WwoService
+from wwoproxy.service.gateway import WwoGateway
+from wwoproxy.service.parser import Parser
 
 class TestWwoService(unittest.TestCase):
     def setUp(self):
@@ -37,28 +38,15 @@ class TestWwoService(unittest.TestCase):
 class TestParser(unittest.TestCase):
     def setUp(self):
         self.parser = Parser()
-        with open('../res/sample_wwo_output.json', 'r') as json_file:            
+        with open('wwoproxy/tests/sample_wwo_output.json', 'r') as json_file:            
             self.input = json_file.read()
-        with open('../res/sample_wwo_proxy_output.json', 'r') as json_file:            
+        with open('wwoproxy/tests/sample_wwo_proxy_output.json', 'r') as json_file:            
             self.output = json.load(json_file)
 
     def test_parse(self):
         res = self.parser.parse(self.input)
         self.maxDiff = None
-        self.assertEquals(self.output, res)
-
-class FlaskrTestCase(unittest.TestCase):
-
-    def setUp(self):
-        wwo.app.config['TESTING'] = True
-        self.app = wwo.app.test_client()
-
-    def test_hw(self):
-        rv = self.app.get('/weather/12/13')
-        print rv.data
-        self.assertIsNotNone(rv.data)
-        
-
+        self.assertEquals(self.output, res)      
 
 if __name__ == '__main__':
     unittest.main()

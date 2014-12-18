@@ -57,5 +57,5 @@ target/
 *~
 
 #settings
-src/settings.py
-
+settings.py
+settings.py.prod

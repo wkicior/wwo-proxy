@@ -1,5 +1,5 @@
 from flask import Flask, request
-from service import WwoService
+from wwoproxy.service.service import WwoService
 import json
 
 app = Flask(__name__)

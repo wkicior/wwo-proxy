@@ -3,9 +3,12 @@ MAINTAINER https://github.com/wkicior
 RUN yum install -y python-pip wget
 ADD requirements .
 RUN pip install -r requirements
-ADD src/* /src/
+RUN mkdir /wwo-proxy
+ADD wwoproxy /wwo-proxy/wwoproxy
+ADD server.py /wwo-proxy/server.py
+ADD settings.py.prod /wwo-proxy/wwoproxy/settings.py
 EXPOSE 80
-WORKDIR /src
+WORKDIR /wwo-proxy
 
 CMD python server.py
 

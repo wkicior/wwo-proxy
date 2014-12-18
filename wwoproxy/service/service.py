@@ -1,7 +1,7 @@
 from gateway import WwoGateway
 from parser import Parser
 try:
-    from settings import *
+    from wwoproxy.settings import *
 except:
     print "ERROR! Please use settings.py.sample template to create your settings.py file"
 

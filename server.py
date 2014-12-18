@@ -1,4 +1,4 @@
-from wwo import app
+from wwoproxy.boundary.wwo import app
 import cherrypy
 
 if __name__ == '__main__':

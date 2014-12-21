@@ -17,5 +17,8 @@ $ ./dev.sh
 #TEST
 $ ./test.sh
 
+#BDD TEST
+$ behave wwoproxy/tests/integration/
+
 
 

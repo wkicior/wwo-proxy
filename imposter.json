@@ -1,0 +1,30 @@
+{
+  "port": 4545,
+  "protocol": "http",
+  "stubs": [{
+    "responses": [
+      { "is": { "statusCode": 400, "data": "aGVsbG8sIHdvcmxkIQ==" }}
+    ],
+    "predicates": [{
+      "and": [
+        {
+          "equals": {
+            "path": "/test",
+            "method": "GET",
+            "headers": {
+              "Content-Type": "application/json"
+            }
+          }
+        },
+        {
+          "not": {
+            "contains": {
+              "body": "requiredField"
+            },
+            "caseSensitive": true
+          }
+        }
+      ]
+    }]
+  }]
+}

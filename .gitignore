@@ -52,3 +52,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#emacs
+*~
+
+#settings
+settings.py
+settings.py.prod

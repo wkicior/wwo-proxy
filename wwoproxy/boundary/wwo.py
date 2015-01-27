@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, Response
 from wwoproxy.service.service import WwoService
 import json
 
@@ -8,7 +8,8 @@ app = Flask(__name__)
 def forecast(latitude, longitude):
     wwo_service = WwoService()
     forecast_dic =  wwo_service.get_forecast(latitude, longitude)
-    return json.dumps(forecast_dic)
+    res = json.dumps(forecast_dic)
+    return Response(response=res, status=200, mimetype="application/json")
 
 @app.route("/")
 def index():

@@ -6,7 +6,7 @@ $ cp settings.py.sample settings.py.prod; vim settings.py.prod
 $ docker build -t wkicior/wwo-proxy .
 
 #RUN:
-$ docker run -d -p 8000:80 wkicior/wwo-proxy
+$ docker run -d --name wwo-proxy -p 8000:80 wkicior/wwo-proxy
 
 
 #To DEV and TEST plase copy and edit the settings file first:

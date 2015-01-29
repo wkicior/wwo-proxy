@@ -20,5 +20,8 @@ $ ./test.sh
 #BDD TEST
 $ behave wwoproxy/tests/integration/
 
-
+#Use
+$ wget http://wwo-proxy/forecast/12/13
+#or
+$ wget http://localhost:8000/forecast/12/13
 

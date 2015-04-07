@@ -4,19 +4,19 @@
             {
                 "conditionEntries": [
                     {
-                        "hour": 1,
+                        "hour": "01:00",
                         "windDirDegree": 17,
-                        "windGustKnots": 12,
-                        "windSpeedKnots": 6
+                        "windGustKnots": 22,
+                        "windSpeedKnots": 20
                     },
                     {
-                        "hour": 4,
+                        "hour": "04:00",
                         "windDirDegree": 35,
                         "windGustKnots": 10,
                         "windSpeedKnots": 5
                     },
                     {
-                        "hour": 7,
+                        "hour": "07:00",
                         "windDirDegree": 48,
                         "windGustKnots": 7,
                         "windSpeedKnots": 5
@@ -27,19 +27,19 @@
             {
                 "conditionEntries": [
                     {
-                        "hour": 1,
+                        "hour": "01:00",
                         "windDirDegree": 31,
                         "windGustKnots": 12,
                         "windSpeedKnots": 6
                     },
                     {
-                        "hour": 4,
+                        "hour": "04:00",
                         "windDirDegree": 47,
                         "windGustKnots": 11,
                         "windSpeedKnots": 5
                     },
                     {
-                        "hour": 7,
+                        "hour": "07:00",
                         "windDirDegree": 50,
                         "windGustKnots": 6,
                         "windSpeedKnots": 5

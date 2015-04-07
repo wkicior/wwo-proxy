@@ -32,7 +32,8 @@ class Parser:
     This should contain all the weather conditions data
     """
     def parse_condition_entry(self, hourly_entry):
-        hour = (int(hourly_entry['time']) / 100)
+        hour_int = (int(hourly_entry['time']) / 100)
+        hour = str(hour_int) + ":00"
         wind_guts_knots = kmh_to_knots(int(hourly_entry['WindGustKmph']))
         wind_speed_knots = kmh_to_knots(int(hourly_entry['windspeedKmph']))
         wind_dir_degree = int(hourly_entry['winddirDegree'])

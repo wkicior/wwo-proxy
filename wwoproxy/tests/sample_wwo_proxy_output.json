@@ -1,54 +1,52 @@
 {
-    "forecast": [
-        {
-            "day": {
-                "condition_entries": [
+    "forecast": {
+        "days": [
+            {
+                "conditionEntries": [
                     {
-                        "hour": 1,
-                        "wind_dir_degree": 17,
-                        "wind_gust_knots": 12,
-                        "wind_speed_knots": 6
+                        "hour": "01:00",
+                        "windDirDegree": 17,
+                        "windGustKnots": 22,
+                        "windSpeedKnots": 20
                     },
                     {
-                        "hour": 4,
-                        "wind_dir_degree": 35,
-                        "wind_gust_knots": 10,
-                        "wind_speed_knots": 5
+                        "hour": "04:00",
+                        "windDirDegree": 35,
+                        "windGustKnots": 10,
+                        "windSpeedKnots": 5
                     },
                     {
-                        "hour": 7,
-                        "wind_dir_degree": 48,
-                        "wind_gust_knots": 7,
-                        "wind_speed_knots": 5
+                        "hour": "07:00",
+                        "windDirDegree": 48,
+                        "windGustKnots": 7,
+                        "windSpeedKnots": 5
                     }
                 ],
                 "date": "2014-12-16"
-            }
-        },
-        {
-            "day": {
-                "condition_entries": [
+            },
+            {
+                "conditionEntries": [
                     {
-                        "hour": 1,
-                        "wind_dir_degree": 31,
-                        "wind_gust_knots": 12,
-                        "wind_speed_knots": 6
+                        "hour": "01:00",
+                        "windDirDegree": 31,
+                        "windGustKnots": 12,
+                        "windSpeedKnots": 6
                     },
                     {
-                        "hour": 4,
-                        "wind_dir_degree": 47,
-                        "wind_gust_knots": 11,
-                        "wind_speed_knots": 5
+                        "hour": "04:00",
+                        "windDirDegree": 47,
+                        "windGustKnots": 11,
+                        "windSpeedKnots": 5
                     },
                     {
-                        "hour": 7,
-                        "wind_dir_degree": 50,
-                        "wind_gust_knots": 6,
-                        "wind_speed_knots": 5
+                        "hour": "07:00",
+                        "windDirDegree": 50,
+                        "windGustKnots": 6,
+                        "windSpeedKnots": 5
                     }
                 ],
                 "date": "2014-12-17"
             }
-        }
-    ]
+        ]
+    }
 }

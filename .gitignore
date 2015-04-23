@@ -59,3 +59,8 @@ target/
 #settings
 settings.py
 settings.py.prod
+
+#intelli J
+.idea
+*.iml
+
